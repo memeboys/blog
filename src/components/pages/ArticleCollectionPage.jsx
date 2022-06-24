@@ -8,7 +8,7 @@ import style from './ArticleCollectionPage.module.scss';
 
 export const ArticleCollectionPage = () => {
   const profile = useSelector(profileSelector);
-  const step = 20;
+  const step = 5;
   const [articles, setArticles] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [pageCount, setPageCount] = useState(0);
