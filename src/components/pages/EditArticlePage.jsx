@@ -29,7 +29,7 @@ export const EditArticlePage = () => {
 
   return (
     <FormContainer>
-      <ArticleForm initialValue={article} onCommit={handleEditArticle} />
+      <ArticleForm initialValue={article} onCommit={handleEditArticle} h2={'Edit article'} />
     </FormContainer>
   );
 };
