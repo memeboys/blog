@@ -3,7 +3,7 @@ import TextArea from 'antd/lib/input/TextArea';
 import React from 'react';
 import style from './ArticleForm.module.scss';
 
-export const ArticleForm = ({ onCommit, initialValue = null }) => {
+export const ArticleForm = ({ onCommit, initialValue = null, h2 }) => {
   if (!initialValue) {
     initialValue = {
       tagList: [''],
@@ -26,7 +26,7 @@ export const ArticleForm = ({ onCommit, initialValue = null }) => {
   return (
     <>
       <div>
-        <h2>Create new article</h2>
+        <h2>{h2}</h2>
         <Form requiredMark={false} layout="vertical" onFinish={handleCommit} initialValues={initialValue}>
           <Form.Item
             name="title"
