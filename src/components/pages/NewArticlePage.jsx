@@ -14,7 +14,7 @@ export const NewArticlePage = () => {
 
   return (
     <FormContainer>
-      <ArticleForm onCommit={handleNewArticle} />
+      <ArticleForm onCommit={handleNewArticle} h2={'Create new article'} />
     </FormContainer>
   );
 };
